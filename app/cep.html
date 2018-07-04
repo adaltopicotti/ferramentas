@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="4Logic">
+    <meta name="title" content="ScoopThemes">
     <meta name="ROBOTS" content="Bootstrap 3 Themes, Responsive Themes, Bootstrap 3 Responsive, Wordpress Themes, Clean Themes, Modern Themes, Flat Themes, Flat UI, UI Design, UX Design, Web design, responsive bootstrap, Jquery Plugins, Free Plugins, Premium Bootstrap themes, Bootstrap 3, Premium Web Templates, Bootstrap Templates, Bootstrap Responsive Templates, Admin, Dashboard, Admin Templates, Admin Responsive, Admin responsive themes">
     <meta name="description" content="Solutions For Web Developers Form ( Web Templates, Web Themes, Jquery Plugins, UX Design.. ) Whatever They Need.">
     <meta name="abstract" content="Solutions For Web Developers Form ( Web Templates, Web Themes, Jquery Plugins, UX Design.. ) Whatever They Need.">
@@ -25,7 +25,7 @@
 
     <!-- siimple style -->
     <link href="assets/css/style.css" rel="stylesheet">
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -44,6 +44,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<div class="mypanel"></div>
     <div class="cloud floating">
         <img src="assets/img/cloud.png" alt="Scoop Themes">
     </div>
@@ -64,27 +65,56 @@
     <div id="wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+                <div class="col-sm-12 col-md-12 col-lg-12">
                     <a href="/"><img src="assets/img/logo.png" alt="4Logic" ></a>
                     <br/>
+
                     <br/>
-                    <h2 class="subtitle">O Site encontra-se em manutenção. Por agora utilize os links abaixo.</h2>
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- 4logic_main_top -->
-					<ins class="adsbygoogle"
-						 style="display:inline-block;width:728px;height:90px"
-						 data-ad-client="ca-pub-4456878218517382"
-						 data-ad-slot="4720248686"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>             
+                    <form class="form-inline validate signup" action="" method="get" role="form">
+                        <div class="form-group">
+							<table>
+								<tr>
+									<td><label class="btn btn-theme">Cep:</label></td>
+									<td><input class="cep" type="email" name="cep" id="cep" value="" size="10" maxlength="9" placeholder="Digite o CEP aqui ..."></td>
+								</tr>
+								<tr>
+									<td><label class="btn btn-theme">Rua:</label></td>
+									<td><input class="logradouro" type="email" name="rua" id="logradouro" size="60"  /></td>
+								</tr>
+								<tr>
+									<td><label class="btn btn-theme">Bairro:</label></td>
+									<td><input class="bairro" type="email" name="bairro" id="bairro" size="40" /></td>
+								</tr>
+								<tr>
+									<td><label class="btn btn-theme">Cidade:</label></td>
+									<td><input class="cidade" type="email" name="cidade" id="localidade" size="40" /></td>
+								</tr>
+								<tr>
+									<td><label class="btn btn-theme">Estado:</label></td>
+									<td><input type="email" name="uf" id="uf" size="2" /></td>
+								</tr>
+								<tr>
+									<td><label class="btn btn-theme">IBGE:</label></td>
+									<td><input type="email" name="ibge" id="ibge" size="8" /></td>
+								</tr>  
+								<tr>
+									
+								</tr> 
+							</table><br>
+							<div>
+
+						    </div>
+                        </div>
+                    </form>
+					
                     <br/>
-					<div class="col-sm-12 align-center">
-						<td><a href="/app/cep.html" class="btn btn-theme" title="CEP">Consulta de CEP</a></td>
-						<td><a href="/app/cpf.html" class="btn btn-theme" title="CEP">Consulta de CPF</a></td>
-						<td><a href="http://adaltopicotti.pythonanywhere.com/app/geotools/coordinate/" class="btn btn-theme" title="CEP">GeoCoordenadas</a></td>
-					</div>
                 </div>
+				<div class="col-sm-12 align-center">
+					<td><a href="/app/cep.html" class="btn btn-theme" title="CEP">Consulta de CEP</a></td>
+					<td><a href="/app/cpf.html" class="btn btn-theme" title="CEP">Consulta de CPF</a></td>
+					<td><a href="http://adaltopicotti.pythonanywhere.com/app/geotools/coordinate/" class="btn btn-theme" title="CEP">GeoCoordenadas</a></td>
+				</div>
                 <div class="col-sm-12 align-center">
                     <ul class="social-network social-circle">
                         <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -100,6 +130,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
                     <p class="copyright">Copyright &copy; 2014 - <a href="http://scoopthemes.com">ScoopThemes.com</a>
                     </p>
                 </div>
@@ -155,5 +190,5 @@ function register($form) {
     </script>
 
 </body>
-
+	<script src="js/cep.js"></script>
 </html>

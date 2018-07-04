@@ -1,0 +1,26 @@
+.body {
+		padding-top:30px;
+		padding-left:20px;
+		padding-right:200px;
+	}
+
+
+#top.pub { padding-top:30px }
+
+.info_b {
+    margin: 200px 300px 300px 200px;
+    margin-right: 300px;
+		padding-left:200px;
+		padding-right:200px;
+}
+
+.info_b a, .info h1, .info h2,.info h3,.info h4,.info h5 {
+
+        margin-right: 300px;
+		padding-left:200px;
+		padding-right:20px;
+}
+
+.info_b p {
+    font-size: 24pt;
+}

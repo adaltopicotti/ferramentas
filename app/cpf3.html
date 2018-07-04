@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>4 Logic</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+	    <div id="top" class="pub"> 
+
+		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only"> Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"> 4 Logic</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">Início</a></li>
+						<li><a href="/app/cpf.html">Consulta CPF</a></li>
+						<li><a href="/app/cep.html">Consulta CEP</a></li>
+						<li><a href="http://adaltopicotti.me/">Adalto Picotti Jr</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="pub" id="top"> 
+		</div>
+		<div id="main" class="container-fluid">
+			<h3 class="page-header">Consulta de CPF</h3>
+		</div>
+		<div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		*** Insira o CPF e pressione a tecla 'TAB' ***
+        <div>
+            <form method="get" action=".">
+                <table>
+                    <tr>
+                        <td>
+                            <label>CPF:</label>
+                        </td>
+                        <td>
+                            <input name="cpf" type="text" id="cpf" value="" size="12" maxlength="11">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nome:</label>
+                        </td>
+                        <td>
+                            <input name="nome" type="text" id="nome" size="30" disabled="true" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Consulta ID:</label>
+                        </td>
+                        <td>
+                            <input name="consultaID" type="text" id="consultaID" size="20" disabled="true"/>
+                        </td>
+                    </tr>
+                </table>
+              <br />
+            </form>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+	<script src="js/cpf.js"></script>
+
+</html>
