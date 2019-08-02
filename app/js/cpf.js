@@ -5,7 +5,7 @@ $('#cpf').on('focusout', function consultaCPF() {
 
     var cpf = $('#cpf').val().replace(/\D/g, '');
     if (TestaCPF(cpf) == true){
-        $.getJSON('https://api.cpfcnpj.com.br/5d7a6e8dcda547e285708b2780cc87c7/1/json/'+cpf , function(data) {
+        $.getJSON('https://api.riddlecode.com/api/cpf/'+cpf , function(data) {
     
     
             $("#nome").val(`${data.nome}`);
