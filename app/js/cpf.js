@@ -5,7 +5,7 @@ $('#cpf').on('focusout', function consultaCPF() {
 
     var cpf = $('#cpf').val().replace(/\D/g, '');
     if (TestaCPF(cpf) == true){
-        $.getJSON('https://api.riddlecode.com/api/cpf/'+cpf , function(data) {
+        $.getJSON(process.env.API_URL +'/person/cpf/'+cpf , function(data) {
     
     
             $("#nome").val(`${data.nome}`);
