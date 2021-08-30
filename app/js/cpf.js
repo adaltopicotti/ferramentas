@@ -5,7 +5,7 @@ $('#cpf').on('focusout', function consultaCPF() {
 
     var cpf = $('#cpf').val().replace(/\D/g, '');
     if (TestaCPF(cpf) == true){
-        $.getJSON(process.env.API_URL +'/person/cpf/'+cpf , function(data) {
+        $.getJSON(env.API_URL +'/person/cpf/'+cpf , function(data) {
     
     
             $("#nome").val(`${data.nome}`);
